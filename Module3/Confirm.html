@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Validation and Feedback</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Styles/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Are you sure?</h4>
+          </div>
+          
+          <div class="modal-body">
+            <div>Are you sure you wish to submit this album?</div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-primary">Confirm</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <button type="button" class="btn btn-success col-md-2 col-md-offset-5"
+                data-toggle="modal" data-target="#myModal">
+          Open dialog
+        </button>
+      </div>
+    </div>
+    
+    <script src="Scripts/jquery-1.11.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+  </body>
+</html>
